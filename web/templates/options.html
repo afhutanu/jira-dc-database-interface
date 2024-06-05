@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Options</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="container mt-5">
+    <h2>Options</h2>
+    <div class="list-group">
+        <button onclick="showForm('search')" class="list-group-item list-group-item-action">Search for user</button>
+        <button onclick="showForm('create_schema')" class="list-group-item list-group-item-action">Create new schema</button>
+        <button onclick="showForm('create_user')" class="list-group-item list-group-item-action">Create new readuser</button>
+        <button onclick="showForm('add_to_schema')" class="list-group-item list-group-item-action">Add readuser to schema</button>
+    </div>
+    <div id="form_area" class="mt-4"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/options.js') }}"></script>
+</body>
+</html>
